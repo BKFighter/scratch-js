@@ -22,12 +22,6 @@ exports.repeat = function(times, callback) {
     }
 };
 
-exports.repeatUntil = function(happens, callback) {
-    while (!happens()) {
-        callback();
-    }
-};
-
 exports.wait = function(secs) {
     setTimeout(process.stdin.resume, secs * 1000);
     process.stdin.pause();
