@@ -4,17 +4,17 @@ const process = require("process");
 var time = require("time");
 var int = 1234;
 
-var monthNames = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+var monthNames = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-exports.yearsSince1900 = time.localtime(Date.now()/1000).year;
-exports.year           = time.localtime(Date.now()/1000).year+1900;
-exports.monthName      = monthNames[time.localtime(Date.now()/1000).month];
-exports.month          = time.localtime(Date.now()/1000).month;
-exports.day            = time.localtime(Date.now()/1000).dayOfMonth;
-exports.hour           = time.localtime(Date.now()/1000).hours;
-exports.minute         = time.localtime(Date.now()/1000).minutes;
-exports.second         = time.localtime(Date.now()/1000).seconds;
-exports.timezone       = time.localtime(Date.now()/1000).timezone;
+exports.yearsSince1900 = function() { return time.localtime(Date.now()/1000).year; };
+exports.year           = function() { return time.localtime(Date.now()/1000).year+1900; };
+exports.monthName      = function() { return monthNames[time.localtime(Date.now()/1000).month]; };
+exports.month          = function() { return time.localtime(Date.now()/1000).month; };
+exports.day            = function() { return time.localtime(Date.now()/1000).dayOfMonth; };
+exports.hour           = function() { return time.localtime(Date.now()/1000).hours; };
+exports.minute         = function() { return time.localtime(Date.now()/1000).minutes; };
+exports.second         = function() { return time.localtime(Date.now()/1000).seconds; };
+exports.timezone       = function() { return time.localtime(Date.now()/1000).timezone; };
 exports.pi             = Math.PI;
 
 exports.repeat = function(times, callback) {
