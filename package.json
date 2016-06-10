@@ -1,0 +1,26 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "scratch-js is a Node module for Scratchers making the switch",
+  "main": "scratch-js.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chikadi/scratch-js.git"
+  },
+  "keywords": [
+    "node",
+    "module"
+  ],
+  "author": "Baran Skistad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chikadi/scratch-js/issues"
+  },
+  "homepage": "https://github.com/chikadi/scratch-js#readme",
+  "dependencies": {
+    "time": "^0.11.4"
+  }
+}
