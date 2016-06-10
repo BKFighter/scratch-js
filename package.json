@@ -1,6 +1,6 @@
 {
   "name": "scratch-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "scratch-js is a Node module for Scratchers making the switch",
   "main": "scratch-js.js",
   "scripts": {
