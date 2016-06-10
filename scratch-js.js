@@ -15,8 +15,14 @@ exports.second         = time.localtime(Date.now()/1000).seconds;
 exports.timezone       = time.localtime(Date.now()/1000).timezone;
 
 
-exports.repeat = function (times, code) {
-    for(var i = 0; i < times; i++) {
-        vm.runInContext(code);
+exports.repeat = function(times, callback) {
+    for (var i = 0; i < times; i++) {
+        callback();
     }
-};
+}
+
+exports.repeatUntil = function(happens, callback) {
+    while (!happens) {
+      callback();
+    }
+  }
