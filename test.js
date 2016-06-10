@@ -1,3 +1,5 @@
-var scratch_js = require("./scratch_js.js");
+var scratch = require("./scratch-js.js");
 
-console.log('Welcome to the month of ' + scratch_js.monthname);
+scratch.repeat(3, function() {
+    console.log('Repeat this.');
+});
