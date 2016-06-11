@@ -24,6 +24,8 @@ exports.repeat = function(times, callback) {
 };
 
 exports.join = function(jointhis, andthis) {
+    jointhis.toString();
+    andthis.toString();
     return jointhis + andthis;
 };
 
@@ -55,17 +57,17 @@ exports.random = function(lowest, highest) {
     return Math.ceil(Math.random() * (highest - lowest + 1) + lowest - 1);
 };
 
-exports.round(number, type) {
+exports.round = function(number, type) {
     if (type==null){return Math.round(number);}
     if (type=='ceiling'){return Math.ceil(number);}
     if (type=='floor'){return Math.floor(number);}
 };
 
-exports.abs(number) {
+exports.abs = function(number) {
     return Math.abs(number);
 }
 
-exports.letterOf(string, at){
-    string.toString();//Just in case it only works with strings.
+exports.letterOf = function(string, at){
+    string.toString();
     return string.charAt(at);
 }
