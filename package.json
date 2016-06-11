@@ -1,8 +1,11 @@
 {
   "name": "scratch-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "scratch-js is a Node module for Scratchers making the switch",
   "main": "scratch-js.js",
+  "files": {
+    "scratch-js.js"
+  }
   "scripts": {
     "test": "node test.js"
   },
