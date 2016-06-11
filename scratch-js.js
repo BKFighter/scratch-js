@@ -68,6 +68,6 @@ exports.abs = function(number) {
 }
 
 exports.letterOf = function(string, at){
-    string.toString();//Just in case it only works with strings.
+    string.toString();
     return string.charAt(at);
 }
