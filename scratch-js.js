@@ -24,6 +24,8 @@ exports.repeat = function(times, callback) {
 };
 
 exports.join = function(jointhis, andthis) {
+    jointhis.toString();
+    andthis.toString();
     return jointhis + andthis;
 };
 
