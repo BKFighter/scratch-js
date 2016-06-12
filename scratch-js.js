@@ -24,9 +24,7 @@ exports.repeat = function(times, callback) {
 };
 
 exports.join = function(jointhis, andthis) {
-    jointhis.toString();
-    andthis.toString();
-    return jointhis + andthis;
+    return jointhis.toString() + andthis.toString();
 };
 
 exports.sqrt = function(number) {
