@@ -17,6 +17,6 @@ Here's a basic script using scratch-js.
 var scratch = require("scratch-js")
 
 scratch.repeat(3, function() {
-    console.log('Welcome to the month of ' + scratch.monthName);
+    console.log('Welcome to the month of ' + scratch.monthName());
 });
 ```
