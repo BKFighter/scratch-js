@@ -69,3 +69,7 @@ exports.letterOf = function(string, at){
     string.toString();
     return string.charAt(at);
 }
+
+exports.askAndWait = function(ask){
+    return windows.prompt(ask,"");
+}
