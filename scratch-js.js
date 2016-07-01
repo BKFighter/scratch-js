@@ -66,8 +66,7 @@ exports.abs = function(number) {
 }
 
 exports.letterOf = function(string, at){
-    string.toString();
-    return string.charAt(at);
+    return string.toString().charAt(at-1);
 }
 
 exports.askAndWait = function(ask){
